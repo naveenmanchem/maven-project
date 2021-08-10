@@ -1,5 +1,4 @@
 # maven-project
-
 Hi..first demo
 
 This is first demo class
