@@ -1,9 +1,5 @@
-pipeline
-{
-    agent {
-     node {
-        label 'node-01'
-        }
+pipeline {
+    agent 'node-01'
      stage('SCM checkout') {
       git 'https://github.com/naveenmanchem/maven-project.git'
     }
@@ -11,4 +7,3 @@ pipeline
      sh 'mvn install'
     }
     }
-}
