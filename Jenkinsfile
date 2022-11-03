@@ -1,7 +1,10 @@
-node {
-    agent node-01
-    {
-    stage('SCM checkout') {
+pipeline
+{
+    agent {
+     node {
+        label 'node-01'
+        }
+     stage('SCM checkout') {
       git 'https://github.com/naveenmanchem/maven-project.git'
     }
     stage('build package'){
